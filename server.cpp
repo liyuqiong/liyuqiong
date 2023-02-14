@@ -29,7 +29,8 @@ int main()
 		perror("bind");
 		exit(1);
 	}
-
+	
+	//监听
 	if(listen(server_sockfd,20) < 0)
 	{
 		perror("listen");
